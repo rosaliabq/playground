@@ -30,3 +30,15 @@ git reset --hard <COMMIT> #remove commits and code until <COMMIT>
 git reset --hard HEAD #discards all local changes
 ```
 
+### Git Branch
+
+```bash
+#see all branches
+git branch
+#create new branch
+git branch <sec_name>
+#merge branches
+git checkout <main_branch>
+git merge <sec_branch>
+
+```
