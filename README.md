@@ -28,6 +28,11 @@ git add -u #add modified and deteled, without new files
 git reset --soft <COMMIT> #remove commits until <COMMIT> but keeps code changes
 git reset --hard <COMMIT> #remove commits and code until <COMMIT>
 git reset --hard HEAD #discards all local changes
+#adding commits
+git commit -m "blablabla"
+git commit --amend -m "blablabla"
+#add tags
+git tag -a v1.0 -m "message"
 ```
 
 ### Git Branch
@@ -37,8 +42,13 @@ git reset --hard HEAD #discards all local changes
 git branch
 #create new branch
 git branch <sec_name>
+git checkout <sec_name>
+# ---OR---
+git checkout -b <sec_name>
 #merge branches
 git checkout <main_branch>
 git merge <sec_branch>
+#delete a branch
+git branch -D <branch>
 
 ```
